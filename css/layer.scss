@@ -1,0 +1,135 @@
+header {
+	background: #ebebeb;
+}
+.header-top {
+	background: #07393C;
+    color: #fff;
+    font-size: 11px;
+    padding: 8px 0;
+    text-align: right;
+    a {
+    	color: #E2D219;
+    	font-weight: bold;
+    	padding-left: 5px;
+    }
+    li {
+    	padding-right: .5rem;
+    	position: relative;
+    	&:last-child {
+    		padding-right: 0;
+    		&:after {
+    			display: none;
+    		}
+    	}
+    	&:after {
+    		content: "|";
+		    position: absolute;
+		    right: -5px;
+		    top: -2px;
+    	}
+    }
+}
+.info-head-top {
+	position: relative;
+    padding-right: 30px;
+    .icon-hotline {
+    	position: absolute;
+	    top: -5px;
+	    right: 0;
+	    img {
+	    	height: 25px;
+	    }
+    }
+}
+.header-logo {
+	padding: 15px 0;
+	.logo {
+		img {
+			height: 80px;
+		}
+	}
+}
+.box-search {
+	max-width: 250px;
+    margin-left: auto;
+    position: relative;
+    padding-right: 32px;
+    input {
+    	width: 100%;
+	    padding: 0 10px;
+	    font-size: 13px;
+	    height: 32px;
+	    border-radius: 5px 0 0 5px;
+	    border: 0;
+    }
+    button {
+    	cursor: pointer;
+	    width: 32px;
+	    height: 32px;
+	    background: #fff;
+	    border: 0;
+	    border-left: 1px solid #07393c;
+	    border-radius: 0 5px 5px 0;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+    }
+}
+.header-menu {
+	border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    ul {
+    	list-style: none;
+    	display: flex;
+    	align-items: center;
+    }
+    a {
+    	font-size: 15px;
+	    font-weight: 600;
+	    display: flex;
+	    padding: 10px 12px;
+	    border-left: 1px solid transparent;
+    	border-right: 1px solid transparent;
+	    i {
+	    	font-size: 22px;
+	    }
+	    &:hover, &.active {
+	    	background: #f7f7f7;
+	    	color: $green;
+	    	border-left: 1px solid #c2c2c2;
+    		border-right: 1px solid #c2c2c2;
+	    }
+    }
+}
+.row {
+	margin: 0 -10px;
+	>div {
+		padding: 0 10px;
+	}
+}
+
+.main-left {
+	max-width: calc(100% - 330px);
+	flex: 0 0 calc(100% - 330px);
+}
+.main-right {
+	max-width: 330px;
+	flex: 0 0 330px;
+}
+
+footer {
+	background-color: #07393C;
+    position: relative;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 12px;
+    ul {
+    	list-style: none;
+    	li {
+    		margin-bottom: 8px;
+    		&:last-child {
+    			margin-bottom: 0;
+    		}
+    	}
+    }
+}
